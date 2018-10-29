@@ -1,0 +1,59 @@
+html
+    head
+        title Another Form Assignment
+        link(href='style.css', rel='stylesheet')
+        script(src='/app.js')
+
+body 
+
+block content
+        
+
+        // register form
+        form(method='POST' action='mongodb://localhost:27017')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='first and last' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='attending') Number Attending :
+            input#attending.form-control(type='button', placeholder='number attending' name='number attending')
+          div.form-group
+            label(for='number') Number of Guests:
+            input#number.form-control(type='dropdown' name='dropdown')
+        
+
+
+
+//- html
+//-     head
+//-     title="RSVP Event Forms"
+//-     script(src='/app.js')
+//-     script(src='/script.js')
+//-     link(rel="stylesheet" href="style.css")
+
+
+//-     h1="Please Fill Out The Form Below"
+//-     body
+//-         form(action = "mongodb://localhost:27017", method = "GET", enctype = "multipart/form-data", id="user-create-form"
+
+//-             div
+//-                 label(for="file") Please Enter Your name
+//-                 input(
+//-                     type="text"
+//-                     name="myfile"
+//-                     id="name"
+//-                     )
+//-             div
+
+            
+
+
+//- The app will have three pages. Note: you should be using pug templates to create the HTML for these pages. The main page (on the GET / route) will be the RSVP form with the following fields:
+
+//- name
+//- email
+//- attending (radio buttons, "I'll be there!" / "I can't make it")
+//- number of guests (dropdown selection, 1-8)
